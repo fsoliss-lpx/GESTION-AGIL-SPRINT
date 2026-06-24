@@ -109,3 +109,7 @@ STATICFILES_DIRS = [BASE_DIR / 'static'] # Ruta de archivos estáticos configura
 
 # Modelo de usuario personalizado (Obligatorio para la app accounts)
 AUTH_USER_MODEL = 'accounts.Usuario'
+# A dónde ir después de loguearse (Temporalmente al admin, luego será al Tablero Kanban)
+LOGIN_REDIRECT_URL = '/admin/'
+# A dónde ir después de cerrar sesión
+LOGOUT_REDIRECT_URL = '/accounts/login/'

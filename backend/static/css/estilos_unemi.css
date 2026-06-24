@@ -1,0 +1,36 @@
+/* Paleta de colores institucional UNEMI */
+:root {
+    --unemi-azul: #002E45;
+    --unemi-naranja: #FF6900;
+}
+
+body {
+    background-color: #f4f6f9;
+}
+
+.bg-unemi {
+    background-color: var(--unemi-azul) !important;
+}
+
+.text-unemi-naranja {
+    color: var(--unemi-naranja) !important;
+}
+
+.btn-unemi {
+    background-color: var(--unemi-naranja);
+    border-color: var(--unemi-naranja);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-unemi:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 105, 0, 0.3);
+}
+
+.card-header-unemi {
+    border-bottom: 4px solid var(--unemi-naranja);
+}
